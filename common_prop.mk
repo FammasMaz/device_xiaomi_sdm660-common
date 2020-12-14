@@ -111,7 +111,7 @@ endif
 # Apex
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.apex.updatable=true
-    
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.bluetooth.a2dp_offload.disabled=true \
@@ -348,8 +348,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.zram.mark_idle_delay_mins=60 \
     ro.zram.first_wb_delay_mins=180 \
     ro.zram.periodic_wb_delay_hours=24
-    
+
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
 
+PRODUCT_PROPERTY_OVERRIDES += \
+		# Device mask
+		ro.build.fingerprint=google/redfin/redfin:11/RD1B.201105.010/6962003:user/release-keys
+		ro.product.brand=google
+		ro.product.device=redfin
+		ro.product.manufacturer=Google
+		ro.product.model=Pixel 5
+		ro.product.name=redfin
